@@ -25,24 +25,3 @@ task import -Inputs $TMP_CSV -Outputs $LOG_PATH {
 }
 
 task . setup, export, import
-
-# # Synopsis: Boils a pot of water.
-# task boil_water {
-# 	'boiling water'
-# 	$Script:Pot = @{}
-# }
-
-# # Synopsis: Adds tea bags.
-# task add_tea boil_water, {
-# 	'adding tea'
-# 	$Script:Pot.tea = $TeaBags
-# }
-
-# # Synopsis: Adds sugar lumps.
-# # task add_sugar -If { $SugarLumps -ge 1 } -Jobs boil_water, {
-# task add_sugar boil_water, {
-# 	'adding sugar'
-# 	$Script:Pot.sugar = $SugarLumps
-# }
-
-# task . boil_water, add_tea, add_sugar
